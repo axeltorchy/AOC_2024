@@ -11,24 +11,49 @@ if example:
 with open(inputfile, 'r') as fh:
     lines = fh.readlines()
 
-list1 = []
-list2 = []
+left_list = []
+right_list = []
 
 for line in lines:
     a, b = line.split()
-    list1.append(int(a))
-    list2.append(int(b))
+    left_list.append(int(a))
+    right_list.append(int(b))
 
-N = len(list1)
+N = len(left_list)
 
-sorted_list1 = list1.copy()
-sorted_list1.sort()
-sorted_list2 = list2.copy()
-sorted_list2.sort()
+sorted_left_list = left_list.copy()
+sorted_left_list.sort()
+sorted_right_list = right_list.copy()
+sorted_right_list.sort()
 
 
 sum_diffs_sorted = 0
 for i in range(N):
-    sum_diffs_sorted += abs(sorted_list1[i]-sorted_list2[i])
+    sum_diffs_sorted += abs(sorted_left_list[i]-sorted_right_list[i])
 
+
+print("Part 1:")
 print(sum_diffs_sorted)
+
+
+###
+### Part 2
+###
+
+# Creating dict with number of occurrences in the right list
+occurrences_right = {}
+for x in right_list:
+    if x in occurrences_right:
+        occurrences_right[x] += 1
+    else:
+        occurrences_right[x] = 1
+
+
+similarity_score = 0
+
+for x in left_list:
+    if x in occurrences_right:
+        similarity_score += x * occurrences_right[x]
+
+
+print("Part 2 - similarity score:", similarity_score)
