@@ -23,3 +23,9 @@ the drawbacks of my implementations and to learn how to do better code!
 
 
 Cheers
+
+
+## Progress
+
+`2/25`
+⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
