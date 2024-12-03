@@ -27,5 +27,10 @@ Cheers
 
 ## Progress
 
-`2/25`
-⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+`3/25`
+⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+
+
+## Notes to myself
+
+Always think about using dicts and sets
