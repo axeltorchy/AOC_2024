@@ -1,11 +1,11 @@
 import utils
 import re
 
-example = False
+example = True
 
 inputfile = utils.INPUT_DIR / "day2.txt"
 if example:
-    inputfile = utils.INPUT_DIR / "day2_example.txt"
+    inputfile = utils.INPUT_DIR / "day2_example2.txt"
 
 # Part 1
 with open(inputfile, 'r') as fh:
